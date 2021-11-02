@@ -1,68 +1,24 @@
 package Main;
 
-import java.util.Iterator;
+//import java.util.Iterator;
 
 public class Main {
 
 	public static void main(String[] args) {
-
-//		int x = -5;
-//
-//		char y = 'y';
-//		System.out.println(x);
-//		System.out.println(y);
-//		System.out.println("Hello World");
-//		
-//		System.out.println(5 % 2);
-
-//		System.out.println(x++);
-
-//		System.out.println(x);
-
-//		System.out.println(++x);
-
-//		System.out.println(x += 2);
-
-		int totalSugarInGlass = 0;
-
-		int sugar = 2;
-
-		int maxSugar = 10;
-
-//		if (sugar <= maxSugar) {
-//			totalSugarInGlass += sugar;
-//			System.out.println(totalSugarInGlass);
-//		} else {
-//			System.out.println("We only allow 10 tsp. of sugar per glass.");
-//		}
-
-//		do {
-//			totalSugarInGlass += sugar;
-//			System.out.println("Total sugar in glass: " + totalSugarInGlass);
-//		} while (totalSugarInGlass < maxSugar);
-		
-//		for (; totalSugarInGlass < maxSugar; totalSugarInGlass += sugar) {
-//			System.out.println("Total sugar in glass: " + totalSugarInGlass);
-//		}
-		
-		
-		int[] numbers = new int[] {1, 2, 3, 4, 5};
-		
-		int max = (int) (Math.random() * 10) + 1;
-		
-		int currentNumber = 6;
-		
-		for (int i = 0; i < max; i++, currentNumber++) {
-			int temp[] = new int[numbers.length + 1];
-			for (int j = 0; j < numbers.length; j++) {
-				temp[j] = numbers[j];
-			}
-			temp[temp.length - 1] = currentNumber;
-			numbers = temp;
-		}
-		
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
-		}
+		System.out.println(add(1, 5));
+		System.out.println(concat("Hello", "World"));
+		System.out.println(divide(6, 0));
+	}
+	
+	public static int add(int a, int b) {
+		return a + b;
+	}
+	
+	public static String concat(String a, String b) {
+		return a + b;
+	}
+	
+	public static int divide(int a, int b) {
+		return a / b;
 	}
 }
